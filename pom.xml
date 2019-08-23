@@ -17,7 +17,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>swagger2</module>
+<<<<<<< HEAD
         <module>exception</module>
+=======
+        <module>kafka</module>
+>>>>>>> 7c8ed348c6f7668c5f6d414765a48183f8800f52
     </modules>
     <dependencies>
         <dependency>
