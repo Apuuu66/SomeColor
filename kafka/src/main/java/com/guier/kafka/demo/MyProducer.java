@@ -15,7 +15,7 @@ public class MyProducer {
     static {
 
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "192.168.44.131:9092");
+        properties.put("bootstrap.servers", "192.168.44.138:9092");
         properties.put("key.serializer",
                 "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer",
@@ -94,8 +94,8 @@ public class MyProducer {
 
     public static void main(String[] args) throws Exception {
 
-        sendMessageForgetResult();
-//        sendMessageSync();
+//        sendMessageForgetResult();
+        sendMessageSync();
 //        sendMessageCallback();
     }
 }

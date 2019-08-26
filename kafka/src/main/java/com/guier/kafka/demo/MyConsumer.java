@@ -42,8 +42,7 @@ public class MyConsumer {
             while (true) {
 
                 boolean flag = true;
-                ConsumerRecords<String, String> records = consumer.poll(100);
-
+                ConsumerRecords<String, String> records = consumer.poll(0);
                 for (ConsumerRecord<String, String> record : records) {
                     System.out.println(String.format(
                             "topic = %s, partition = %s, key = %s, value = %s",

@@ -27,7 +27,7 @@
         </triggeringPolicy>
     </appender>
     <!--<logger name="org.apache.kafka.clients.consumer" level="off" />-->
-    <!--<logger name="org.apache.kafka.clients.consumer.ConsumerConfig" level="off" />-->
+    <!--<logger name="org.apache.kafka.clients.consumer.init" level="off" />-->
     <!-- 日志输出级别 -->
     <root level="INFO">
         <appender-ref ref="STDOUT" />
