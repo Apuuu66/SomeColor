@@ -7,9 +7,6 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 
 import java.util.Properties;
 
-/**
- * Created by Qinyi.
- */
 public class MyProducer {
 //    @Value("test-topic")
     private static String topic="test-topic";
