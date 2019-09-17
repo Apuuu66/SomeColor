@@ -21,7 +21,7 @@ public class MyConsumer {
 
         properties = new Properties();
 
-        properties.put("bootstrap.servers", "192.168.44.131:9092");
+        properties.put("bootstrap.servers", "192.168.44.138:9092");
         properties.put("key.deserializer",
                 "org.apache.kafka.common.serialization.StringDeserializer");
         properties.put("value.deserializer",

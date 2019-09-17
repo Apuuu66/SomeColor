@@ -19,6 +19,8 @@
         <module>swagger2</module>
         <module>kafka</module>
         <module>exception</module>
+        <module>case</module>
+        <module>jpa</module>
     </modules>
     <dependencies>
         <dependency>
