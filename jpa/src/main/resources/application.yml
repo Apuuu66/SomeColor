@@ -1,0 +1,35 @@
+##PostgreSQl
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: 123456
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: debug
+                type:
+                    descriptor:
+                        sql: trace
+    pattern:
+      console: '%-5level %logger{36} - %msg%n'
+#logging:
+#    level:
+#        com:
+#          guier: INFO
+#        org:
+#            springframework: INFO
+#        root: ERROR
+#    pattern:
+#        console: '%-5level %logger{36} - %msg%n'
