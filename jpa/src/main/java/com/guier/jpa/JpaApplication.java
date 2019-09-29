@@ -82,12 +82,12 @@ public class JpaApplication implements CommandLineRunner {
         repository.save(new Book("Python"));
 
         System.out.println("\nfindAll()");
-        repository.findAll().forEach(x -> System.out.println(x));
+        repository.findAll().forEach(System.out::println);
 
         System.out.println("\nfindById(1L)");
-        repository.findById(1l).ifPresent(x -> System.out.println(x));
+        repository.findById(1L).ifPresent(System.out::println);
 
         System.out.println("\nfindByName('Node')");
-        repository.findByName("Node").forEach(x -> System.out.println(x));
+        repository.findByName("Node").forEach(System.out::println);
     }
 }

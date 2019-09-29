@@ -21,6 +21,7 @@
         <module>exception</module>
         <module>case</module>
         <module>jpa</module>
+        <module>validator</module>
     </modules>
     <dependencies>
         <dependency>
