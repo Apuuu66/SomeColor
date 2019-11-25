@@ -15,23 +15,20 @@ import java.util.Set;
 @Setter
 @Getter
 @Accessors(chain = true)
-public class Course {
+public class Grade {
     @Id
-//    @GeneratedValue(generator = "idGenerator")
-//    @GenericGenerator(name = "idGenerator", strategy = "uuid")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
-    private String cName;
-    // @Transient
+    private String gName;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "grade",fetch = FetchType.EAGER)
     // @ToString.Exclude
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "courses")
     private Set<Student> students = new HashSet<>();
 
     @Override
     public String toString() {
-        return "Course{" +
+        return "Grade{" +
                 "id=" + id +
-                ", cName='" + cName + '\'' +
+                ", gName='" + gName + '\'' +
                 '}';
     }
 }
