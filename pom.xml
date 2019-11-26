@@ -23,6 +23,7 @@
         <module>jpa</module>
         <module>validator</module>
         <module>exceptions</module>
+        <module>springboot</module>
     </modules>
     <dependencies>
         <dependency>
